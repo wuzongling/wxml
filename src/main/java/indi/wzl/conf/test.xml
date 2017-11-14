@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alldata id="igs">
+	<version>1.0</version>
+	<channel />
+
+	<list>
+		<data id="22">
+			<oappid>
+<![CDATA[ 7312269 ]]>
+			</oappid>
+			<category>402</category>
+			<categoryname>
+<![CDATA[ 角色扮演 ]]>
+			</categoryname>
+			<subcate>
+<![CDATA[ ]]>
+			</subcate>
+			<bigmaplink>
+<![CDATA[
+http://apps.bdimg.com/store/static/kvt/fab02e996d423d667131984e32ad789d.jpg;http://apps1.bdimg.com/store/static/kvt/7c44fdf1c060b2dfb045523a93438ccd.jpg;http://apps.bdimg.com/store/static/kvt/d4d6fb9f54b2b7d6473be7476127b205.jpg;http://apps.bdimg.com/store/static/kvt/4089d4ca49dce38c8691ef66b391c33c.jpg;http://apps2.bdimg.com/store/static/kvt/e2ecf24d871edb0dc8374182f284cd7b.jpg
+]]>
+			</bigmaplink>
+			<sourcelink>
+<![CDATA[ ]]>
+			</sourcelink>
+			<title>
+<![CDATA[ 新征途 ]]>
+			</title>
+			<platform>
+<![CDATA[ Andriod ]]>
+			</platform>
+			<version>
+<![CDATA[ 1.8.2 ]]>
+			</version>
+			<minsdkversion>
+<![CDATA[ 8 ]]>
+			</minsdkversion>
+			<releasedate>
+<![CDATA[ 2015-08-11 ]]>
+			</releasedate>
+			<language>
+<![CDATA[ 中文 ]]>
+			</language>
+			<description>
+<![CDATA[
+美女认证 陪你国战 知名女主播 指挥国战 酷炫战宠 助阵国战 八大家族玩法 纵横国战 叛国移民 重征国战\\\"
+]]>
+			</description>
+			<dpi>
+<![CDATA[ ]]>
+			</dpi>
+			<fee />
+			<packagemd5>
+<![CDATA[ 8141d0331b2ce5576d796b76139c0343 ]]>
+			</packagemd5>
+			<keyword>
+<![CDATA[ ]]>
+			</keyword>
+			<packagesize>
+<![CDATA[ 198819479 ]]>
+			</packagesize>
+			<packageformat>
+<![CDATA[ apk ]]>
+			</packageformat>
+			<packagelink>
+<![CDATA[
+http://m.baidu.com/api?action=redirect&token=duchuan_baidu&from=1012685w&type=app&dltype=new&tj=game_1348611_7882133_%E6%96%B0%E5%BE%81%E9%80%94&blink=2ceb687474703a2f2f6263732e39312e636f6d2f706373756974652d6465762f6368616e6e656c2f38313431643033333162326365353537366437393662373631333963303334332e61706b1f56&crversion=1&f=api@terminal_type
+]]>
+			</packagelink>
+			<smallmaplink>
+<![CDATA[
+http://apps.bdimg.com/store/static/kvt/3dc16a3e77a0c1ac38d95087befef3ef.png
+]]>
+			</smallmaplink>
+			<appid>
+<![CDATA[ 5018463 ]]>
+			</appid>
+			<hotlevel>
+<![CDATA[ ]]>
+			</hotlevel>
+			<downloadnumber>0</downloadnumber>
+			<browsenumber>0</browsenumber>
+			<package_name>
+<![CDATA[ com.ztgame.ztmobiletest.baidu ]]>
+			</package_name>
+			<developer_id>
+<![CDATA[ 1218044110 ]]>
+			</developer_id>
+			<developername>
+<![CDATA[ 巨人网络 ]]>
+			</developername>
+			<source>
+<![CDATA[ 华视 ]]>
+			</source>
+			<sourcesite>
+<![CDATA[ http://duchuan11.baidu.com ]]>
+			</sourcesite>
+			<versioncode>
+<![CDATA[ 1042 ]]>
+			</versioncode>
+			<status>
+<![CDATA[ update ]]>
+			</status>
+			<changelog>
+<![CDATA[
+1.8.2更新内容： 1.新增玄兽养成系统 2.新增玄兽灵韵突破副本 3.新增家族总览界面 4.新增家族地图、家族科技养成系统 5.新增家族日常、家族宴席、家族活动系统 6.新增家族个人官职培养体系。 7.新增移民系统（叛国系统） 8.在家族频道、队伍频道、私聊频道开放了语音聊天的功能。 9.新增个人信息界面可上传真实头像功能。 10.新增国战投石车AI特效 11.新增跨服战抢矿玩法 功能优化和调整： 1.优化登陆速度和流程体验。 2.调整了进游戏的加载速度。 3.40级以下玩家不可参加国运和国战 4.调整了天神结算界面，不限制等级弹出结算界面。 5.优化了整体主界面UI布局 6.优化了战斗力显示颜色，用不同颜色区分各种战力阶段 7.修复安卓5.0系统不适配问题。 8.优化前期任务节奏 9.调整经脉开启等级为33级。 10.增加了随机角色姓名库。 11.优化了运镖镖车的镖旗颜色，增加品质辨识度。 12.优化了接镖的免费刷新镖车品质的提示框表现形式。
+]]>
+			</changelog>
+			<supportpad>0</supportpad>
+			<ios_sourcelink>
+<![CDATA[ ]]>
+			</ios_sourcelink>
+			<aladdinflag>1</aladdinflag>
+			<summary>
+<![CDATA[ 全新资料片“国战嘉年华” 认证美女陪你打国战 ]]>
+			</summary>
+			<server_name>
+<![CDATA[ ]]>
+			</server_name>
+			<server_time>
+<![CDATA[ ]]>
+			</server_time>
+			<server_start_test>
+<![CDATA[ ]]>
+			</server_start_test>
+			<server_end_test>
+<![CDATA[ ]]>
+			</server_end_test>
+			<server_test_type>
+<![CDATA[ ]]>
+			</server_test_type>
+			<channel>
+<![CDATA[ 1011 ]]>
+			</channel>
+			<apk_id>7312269</apk_id>
+			<product_id>
+<![CDATA[ 5018463 ]]>
+			</product_id>
+		</data>
+
+		<data>
+			<oappid>
+<![CDATA[ 7312269 ]]>
+			</oappid>
+			<category>402</category>
+			<categoryname>
+<![CDATA[ 角色扮演 ]]>
+			</categoryname>
+			<subcate>
+<![CDATA[ ]]>
+			</subcate>
+			<bigmaplink>
+<![CDATA[
+http://apps.bdimg.com/store/static/kvt/fab02e996d423d667131984e32ad789d.jpg;http://apps1.bdimg.com/store/static/kvt/7c44fdf1c060b2dfb045523a93438ccd.jpg;http://apps.bdimg.com/store/static/kvt/d4d6fb9f54b2b7d6473be7476127b205.jpg;http://apps.bdimg.com/store/static/kvt/4089d4ca49dce38c8691ef66b391c33c.jpg;http://apps2.bdimg.com/store/static/kvt/e2ecf24d871edb0dc8374182f284cd7b.jpg
+]]>
+			</bigmaplink>
+			<sourcelink>
+<![CDATA[ ]]>
+			</sourcelink>
+			<title>
+<![CDATA[ 新征途 ]]>
+			</title>
+			<platform>
+<![CDATA[ Andriod ]]>
+			</platform>
+			<version>
+<![CDATA[ 1.8.2 ]]>
+			</version>
+			<minsdkversion>
+<![CDATA[ 8 ]]>
+			</minsdkversion>
+			<releasedate>
+<![CDATA[ 2015-08-11 ]]>
+			</releasedate>
+			<language>
+<![CDATA[ 中文 ]]>
+			</language>
+			<description>
+<![CDATA[
+美女认证 陪你国战 知名女主播 指挥国战 酷炫战宠 助阵国战 八大家族玩法 纵横国战 叛国移民 重征国战\\\"
+]]>
+			</description>
+			<dpi>
+<![CDATA[ ]]>
+			</dpi>
+			<fee />
+			<packagemd5>
+<![CDATA[ 8141d0331b2ce5576d796b76139c0343 ]]>
+			</packagemd5>
+			<keyword>
+<![CDATA[ ]]>
+			</keyword>
+			<packagesize>
+<![CDATA[ 198819479 ]]>
+			</packagesize>
+			<packageformat>
+<![CDATA[ apk ]]>
+			</packageformat>
+			<packagelink>
+<![CDATA[
+http://m.baidu.com/api?action=redirect&token=duchuan_baidu&from=1012685w&type=app&dltype=new&tj=game_1348611_7882133_%E6%96%B0%E5%BE%81%E9%80%94&blink=2ceb687474703a2f2f6263732e39312e636f6d2f706373756974652d6465762f6368616e6e656c2f38313431643033333162326365353537366437393662373631333963303334332e61706b1f56&crversion=1&f=api@terminal_type
+]]>
+			</packagelink>
+			<smallmaplink>
+<![CDATA[
+http://apps.bdimg.com/store/static/kvt/3dc16a3e77a0c1ac38d95087befef3ef.png
+]]>
+			</smallmaplink>
+			<appid>
+<![CDATA[ 5018463 ]]>
+			</appid>
+			<hotlevel>
+<![CDATA[ ]]>
+			</hotlevel>
+			<downloadnumber>0</downloadnumber>
+			<browsenumber>0</browsenumber>
+			<package_name>
+<![CDATA[ com.ztgame.ztmobiletest.baidu ]]>
+			</package_name>
+			<developer_id>
+<![CDATA[ 1218044110 ]]>
+			</developer_id>
+			<developername>
+<![CDATA[ 巨人网络 ]]>
+			</developername>
+			<source>
+<![CDATA[ 华视 ]]>
+			</source>
+			<sourcesite>
+<![CDATA[ http://duchuan11.baidu.com ]]>
+			</sourcesite>
+			<versioncode>
+<![CDATA[ 1042 ]]>
+			</versioncode>
+			<status>
+<![CDATA[ update ]]>
+			</status>
+			<changelog>
+<![CDATA[
+1.8.2更新内容： 1.新增玄兽养成系统 2.新增玄兽灵韵突破副本 3.新增家族总览界面 4.新增家族地图、家族科技养成系统 5.新增家族日常、家族宴席、家族活动系统 6.新增家族个人官职培养体系。 7.新增移民系统（叛国系统） 8.在家族频道、队伍频道、私聊频道开放了语音聊天的功能。 9.新增个人信息界面可上传真实头像功能。 10.新增国战投石车AI特效 11.新增跨服战抢矿玩法 功能优化和调整： 1.优化登陆速度和流程体验。 2.调整了进游戏的加载速度。 3.40级以下玩家不可参加国运和国战 4.调整了天神结算界面，不限制等级弹出结算界面。 5.优化了整体主界面UI布局 6.优化了战斗力显示颜色，用不同颜色区分各种战力阶段 7.修复安卓5.0系统不适配问题。 8.优化前期任务节奏 9.调整经脉开启等级为33级。 10.增加了随机角色姓名库。 11.优化了运镖镖车的镖旗颜色，增加品质辨识度。 12.优化了接镖的免费刷新镖车品质的提示框表现形式。
+]]>
+			</changelog>
+			<supportpad>0</supportpad>
+			<ios_sourcelink>
+<![CDATA[ ]]>
+			</ios_sourcelink>
+			<aladdinflag>1</aladdinflag>
+			<summary>
+<![CDATA[ 全新资料片“国战嘉年华” 认证美女陪你打国战 ]]>
+			</summary>
+			<server_name>
+<![CDATA[ ]]>
+			</server_name>
+			<server_time>
+<![CDATA[ ]]>
+			</server_time>
+			<server_start_test>
+<![CDATA[ ]]>
+			</server_start_test>
+			<server_end_test>
+<![CDATA[ ]]>
+			</server_end_test>
+			<server_test_type>
+<![CDATA[ ]]>
+			</server_test_type>
+			<channel>
+<![CDATA[ 1011 ]]>
+			</channel>
+			<apk_id>7312269</apk_id>
+			<product_id>
+<![CDATA[ 5018463 ]]>
+			</product_id>
+		</data>
+	</list>
+</alldata>
