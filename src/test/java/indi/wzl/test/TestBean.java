@@ -12,13 +12,13 @@ public class TestBean {
 	
 	@WxmlElement
 	private String version;
-	@WxmlElement
 	private String channel;
 	@WxmlElement
 	private String test;
 	@WxmlElement
-	@ParentElement("list")
 	private List<TestData> data;
+	@WxmlElement("data")
+	private List<TestData> aa;
 	public String getVersion() {
 		return version;
 	}
@@ -43,5 +43,12 @@ public class TestBean {
 	public void setData(List<TestData> data) {
 		this.data = data;
 	}
-	
+
+	public List<TestData> getAa() {
+		return aa;
+	}
+
+	public void setAa(List<TestData> aa) {
+		this.aa = aa;
+	}
 }

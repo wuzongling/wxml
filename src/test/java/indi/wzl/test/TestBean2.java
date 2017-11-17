@@ -15,8 +15,9 @@ public class TestBean2 {
 	private String channel;
 	private String test;
 	@ParentElement("list")
-	@WxmlElement("llist")
+	@WxmlElement("data")
 	private List<TestData> data;
+	@WxmlAttribute
 	private Map map;
 	public String getVersion() {
 		return version;

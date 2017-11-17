@@ -1,6 +1,5 @@
 package indi.wzl.wxml;
 
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -29,6 +28,8 @@ import indi.wzl.util.WxmlTypeUtil;
  */
 public class TypeConvertHandle implements TypeConvert {
 	Logger logger = Logger.getLogger(TypeConvertHandle.class);
+
+	MapConvertHandle mapConvertHandle = new MapConvertHandle();
 
 	public Integer integerConvert(Class cla, Element ele) {
 		// TODO Auto-generated method stub
@@ -131,14 +132,7 @@ public class TypeConvertHandle implements TypeConvert {
 				throw new WxmlException("Map解析错误", e);
 			}
 		}
-
-		for (Element element : listEle) {
-			if (element.elements().size() > 0) {
-				map.put(element.getName(), element);
-			} else {
-				map.put(element.getName(), element.getTextTrim());
-			}
-		}
+		mapConvertHandle.mapConvert(ele,map);
 		return map;
 	}
 

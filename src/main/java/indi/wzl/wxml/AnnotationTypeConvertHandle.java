@@ -119,12 +119,14 @@ public class AnnotationTypeConvertHandle extends TypeConvertHandle {
 			if (generics == null) {
 				return list;
 			}
-			for (Element element : listEle) {
-				T t = generics.newInstance();
-				T obj = (T) AnnotationTypeConvertFactory.typeConvert(
-						t.getClass(), element, null);
-				list.add(obj);
+			if(null != listEle && listEle.size() > 0){
+				for (Element element : listEle) {
+					T t = generics.newInstance();
+					T obj = (T) AnnotationTypeConvertFactory.typeConvert(
+							t.getClass(), element, null);
+					list.add(obj);
 
+				}
 			}
 			return list;
 		} catch (Exception e) {
@@ -170,6 +172,17 @@ public class AnnotationTypeConvertHandle extends TypeConvertHandle {
 			String fieldName = field.getName();
 			Annotation[] annotations = field.getAnnotations();
 			Map<String,Object> map = WxmlTypeUtil.getFieldAnnotationMap(annotations);
+			if(map != null){
+				//元素名
+				String eleName = (String) map.get(AnnotationTypeConstant.ELEMENT);
+				if(StringUtil.isNotNull(eleName))
+					fieldName = eleName;
+
+				String parentElement = (String) map.get(AnnotationTypeConstant.PARENTELEMENT);
+				if (StringUtil.isNotNull(parentElement)) {
+					ele= ele.element(parentElement);
+				}
+			}
 			switch (type) {
 			case TypeConstant.LIST:
 				Type fieldtype = field.getGenericType();
@@ -184,15 +197,8 @@ public class AnnotationTypeConvertHandle extends TypeConvertHandle {
 						throw new WxmlException("List类型的属性只能用@WxmlElement标识");
 					}
 					if (map.containsKey(AnnotationTypeConstant.ELEMENT)) {
-						String parentElement = (String) map.get(AnnotationTypeConstant.PARENTELEMENT);
-						if (parentElement != null) {
-							Element listel = ele.element(parentElement);
-							if (listel != null) {
-								listEle = listel.elements(fieldName);
-							}
-						} else {
+						if(ele != null)
 							listEle = ele.elements(fieldName);
-						}
 						return AnnotationTypeConvertFactory.listConver(typeCla,
 								listEle, mTClass);
 					}
@@ -214,8 +220,6 @@ public class AnnotationTypeConvertHandle extends TypeConvertHandle {
 	 * 
 	 * @param ele
 	 * @param name
-	 * @param type
-	 * @param annotations
 	 * @return
 	 * @throws WxmlException
 	 */

@@ -24,7 +24,7 @@ public class AnnotationTypeConvertFactory {
 	 * 类型解析
 	 * @param cla
 	 * @param ele
-	 * @param annotations
+	 * @param fieldAnnotations
 	 * @return
 	 * @throws SecurityException 
 	 * @throws NoSuchMethodException 
@@ -44,7 +44,7 @@ public class AnnotationTypeConvertFactory {
 	 * @param cla
 	 * @param ele
 	 * @param name 需要转换的元素下的子元素名或者属性名
-	 * @param annotations
+	 * @param fieldAnnotations
 	 * @return
 	 * @throws SecurityException 
 	 * @throws NoSuchMethodException 
@@ -71,7 +71,7 @@ public class AnnotationTypeConvertFactory {
 	 * @param cla
 	 * @param ele 
 	 * @param name 需要转换的元素下的子元素名或者属性名
-	 * @param annotation
+	 * @param fieldAnnotations
 	 * @param type
 	 * @return
 	 * @throws SecurityException 

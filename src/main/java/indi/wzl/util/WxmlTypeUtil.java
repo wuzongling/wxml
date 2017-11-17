@@ -51,7 +51,7 @@ public class WxmlTypeUtil {
 	
 	/**
 	 * 获取注解类型
-	 * @param annotations
+	 * @param annotation
 	 * @return
 	 */
 	public static String getAnnotationType(Annotation annotation){

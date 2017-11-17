@@ -32,4 +32,17 @@ public class StringUtil {
 		}
 		return b;
 	}
+
+	/**
+	 * 是否不为空
+	 * @param str
+	 * @return
+	 */
+	public static Boolean isNotNull(String str){
+		boolean b = false;
+		if(null != str && !"".equals(str)){
+			b = true;
+		}
+		return b;
+	}
 }

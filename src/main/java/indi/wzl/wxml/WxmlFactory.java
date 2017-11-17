@@ -85,11 +85,11 @@ public class WxmlFactory {
 	 * @return
 	 * @throws WxmlException
 	 */
-	public static String toXml(Object obj) throws WxmlException{
+	public static String toXml(Object obj,boolean formate) throws WxmlException{
 		if(isAnnotation){
-			return AnnotationXmlConvertFactory.xmlConvert(obj, null);
+			return AnnotationXmlConvertFactory.xmlConvert(obj, null,formate);
 		}
-		return XmlConvertFactory.xmlConvert(obj, null);
+		return XmlConvertFactory.xmlConvert(obj, null,formate);
 	}
 	
 	/**
@@ -112,14 +112,15 @@ public class WxmlFactory {
 	 * 生成xml字符串
 	 * @param obj
 	 * @param name
+	 * @param formate 是否格式化输出
 	 * @return
 	 * @throws WxmlException
 	 */
-	public static String toXml(Object obj,String name) throws WxmlException{
+	public static String toXml(Object obj,String name,boolean formate) throws WxmlException{
 		if(isAnnotation){
-			return AnnotationXmlConvertFactory.xmlConvert(obj, name);
+			return AnnotationXmlConvertFactory.xmlConvert(obj, name,formate);
 		}
-		return XmlConvertFactory.xmlConvert(obj, name);
+		return XmlConvertFactory.xmlConvert(obj, name,formate);
 	}
 	
 	/**
@@ -141,7 +142,7 @@ public class WxmlFactory {
 	/**
 	 * 解析xml反射成Class的对象
 	 * @param cla
-	 * @param filePath (绝对路径)
+	 * @param filePath classes下相对路径
 	 * @return
 	 * @throws SecurityException 
 	 * @throws NoSuchMethodException 
@@ -155,7 +156,7 @@ public class WxmlFactory {
 	public static Object parse(Class cla,String filePath) throws WxmlException{
 		try {
 			Document doc = null;
-			doc = XmlParseUtil.read(filePath);
+			doc = XmlParseUtil.readClassPath(filePath);
 			return parse(cla,doc);
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -166,7 +167,7 @@ public class WxmlFactory {
 	/**
 	 * 解析xml反射成Class的对象
 	 * @param cla
-	 * @param filePath (绝对路径)
+	 * @param filePath classes下相对路径 (绝对路径)
 	 * @param
 	 * @return
 	 * @throws SecurityException 
@@ -183,14 +184,49 @@ public class WxmlFactory {
 	public static Object parse(Class cla,String filePath,String eleName) throws WxmlException{
 		try {
 			Document doc = null;
-			doc = XmlParseUtil.read(filePath);
+			doc = XmlParseUtil.readClassPath(filePath);
 			return parse(cla,doc,eleName);
 		} catch (Exception e) {
 			// TODO: handle exception
 			throw new WxmlException("解析xml失败："+filePath,e);
 		}
 	}
-	
+
+	/**
+	 * 解析xml反射成List的对象
+	 * @param filePath classes下相对路径
+	 * @param eleName 如果为空，则将根元素下的元素集合反射成List
+	 * @param generics  List<T>  T所代表的的类型
+	 * @desc 将根元素下的名为eleName的元素集合解析成List<T> T的Class为generics
+	 * @return
+	 * @throws WxmlException
+	 */
+	public static <T> List<T> parseList(String filePath,String eleName,Class<T> generics) throws WxmlException{
+		Document doc = null;
+		try {
+			doc = XmlParseUtil.readClassPath(filePath);
+			Element ele = null;
+			List<Element> listEle = null;
+			if(StringUtil.isNull(eleName)){
+				ele = doc.getRootElement();
+				listEle = ele.elements();
+			}else{
+				ele = doc.getRootElement();
+				listEle = ele.elements(eleName);
+			}
+			return parseList(listEle,generics);
+		} catch (Exception e) {
+			throw new WxmlException("解析xml失败："+filePath,e);
+		}
+
+		/*if(WxmlFactory.isAnnotation){
+			//启动annotation配置
+			return AnnotationTypeConvertFactory.listConver(List.class, listEle, generics);
+		}else{
+			return TypeConvertFactory.listConver(List.class,listEle, generics);
+		}*/
+	}
+
 	/**
 	 * 解析xml反射成Class的对象
 	 * @param cla
@@ -242,12 +278,13 @@ public class WxmlFactory {
 				ele = doc.getRootElement(); 
 				ele = ele.element(eleName);
 			}
-			if(WxmlFactory.isAnnotation){
+			return parse(cla,ele);
+			/*if(WxmlFactory.isAnnotation){
 				//启动annotation配置
 				return AnnotationTypeConvertFactory.typeConvert(cla, ele, null);
 			}else{
 				return TypeConvertFactory.typeConvert(cla, ele);
-			}
+			}*/
 		} catch (Exception e) {
 			// TODO: handle exception
 			throw new WxmlException("解析xml失败",e);
@@ -299,13 +336,13 @@ public class WxmlFactory {
 			ele = doc.getRootElement(); 
 			listEle = ele.elements(eleName);
 		}
-		if(WxmlFactory.isAnnotation){
+		return parseList(listEle,generics);
+		/*if(WxmlFactory.isAnnotation){
 			//启动annotation配置
 			return AnnotationTypeConvertFactory.listConver(List.class, listEle, generics);
 		}else{
 			return TypeConvertFactory.listConver(List.class,listEle, generics);
-		}
-		
+		}*/
 	}
 	
 	/**

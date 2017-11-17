@@ -14,8 +14,7 @@ public interface XmlConvert {
 	 * @param parentEle
 	 * @param name
 	 * @param value
-	 * @param cla
-	 * @return 
+	 * @return
 	 */
 	public <T> Object addElement(Element parentEle,String name,Object value,T t);
 	
@@ -24,7 +23,6 @@ public interface XmlConvert {
 	 * @param parentEle
 	 * @param name
 	 * @param value
-	 * @param cla
 	 */
 	public <T> Object addAttribute(Element parentEle,String name,Object value,T t);
 	
@@ -58,7 +56,6 @@ public interface XmlConvert {
 	 * bean字段解析
 	 * @param parentEle
 	 * @param field
-	 * @param cla
 	 * @return
 	 */
 	public <T> Object beanFieldConvert(Element parentEle,Field field,T t) throws WxmlException;
