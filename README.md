@@ -14,7 +14,7 @@ wxml工具是一款用java制作的xml解析工具。它可以很方便的将xml
 ## 1.3 发展
 
 ## 1.4 下载
-        源码字段：https://github.com/wuzongling/wxml
+        源码地址：https://github.com/wuzongling/wxml
         中央仓库地址：暂时未上传到中央仓库
 
 # 二、快速入门
